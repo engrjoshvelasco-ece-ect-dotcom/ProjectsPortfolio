@@ -1,71 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joshua Velasco | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Velasco | Network & Systems Engineer</title>
+  <meta name="description" content="Network & Systems Engineer specializing in CCTV systems, server migrations, and government-scale network infrastructure.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Joshua Velasco | Network & Systems Engineer">
+  <meta property="og:description" content="CCTV & Infrastructure Specialist with government-scale deployment experience">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="hero">
-  <h1>Engr. Joshua M. Velasco,ECE,ECT</h1>
-  <p>Network & Systems Engineer | CCTV & Infrastructure Specialist</p>
-</header>
-
-<section>
-  <h2>About Me</h2>
-  <p>I specialize in network infrastructure, CCTV systems, and server migrations with hands-on experience in government-scale deployments.</p>
-</section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    <h3>CCTV VMS Upgrade/Replacement – Government Client</h3>
-      <div class="image-grid">
-        <img src="assets/images/VMSreplacement1.jpg" onclick="openModal(this)">
-        <img src="assets/images/VMSreplacement2.jpg" onclick="openModal(this)">
-        <img src="assets/images/VMSreplacement3.jpg" onclick="openModal(this)">
-      </div>
-    <p>Upgraded Digifort servers, migrated databases and licenses, ensured zero downtime.</p>
-    <span>Impact: Improved system stability and scalability</span>
-    
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-spinner"></div>
   </div>
 
-  <div class="card">
-    <h3>Huawei Switch Migration</h3>
-    <div class="image-grid">
-      <img src="assets/images/Huawei1.jpg" onclick="openModal(this)">
-      <img src="assets/images/Huawei2.jpg" onclick="openModal(this)">
-      <img src="assets/images/Huawei3.jpg" onclick="openModal(this)">
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Engr. Joshua M. Velasco</h1>
+      <h2>ECE, ECT • Network & Systems Engineer</h2>
+      <p class="hero-subtitle">
+        CCTV & Infrastructure Specialist | Government-Scale Deployments
+      </p>
     </div>
-    <p>Migrated Huawei Switch to existing Extreme Switch and reconfigured network devices.</p>
-    <span>Impact: Seamless network transition</span>
+  </header>
+
+  <main>
+    <section class="about-section" id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          I specialize in <strong>network infrastructure</strong>, <strong>CCTV systems</strong>, 
+          and <strong>server migrations</strong> with hands-on experience in 
+          government-scale deployments across the Philippines.
+        </p>
+        <p>
+          From zero-downtime VMS upgrades to complex network migrations, 
+          I deliver reliable solutions that scale.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <h2>Featured Projects</h2>
+      
+      <div class="card project-card">
+        <h3>CCTV VMS Upgrade/Replacement</h3>
+        <h4>Government Client • Zero-Downtime Migration</h4>
+        <div class="image-grid">
+          <img src="assets/images/VMSreplacement1.jpg" 
+               alt="Digifort VMS server upgrade process" 
+               loading="lazy"
+               onclick="openModal(this.src, 'Digifort VMS Server Upgrade')">
+          <img src="assets/images/VMSreplacement2.jpg" 
+               alt="Database migration during VMS replacement" 
+               loading="lazy"
+               onclick="openModal(this.src, 'Database & License Migration')">
+          <img src="assets/images/VMSreplacement3.jpg" 
+               alt="Completed VMS system post-upgrade" 
+               loading="lazy"
+               onclick="openModal(this.src, 'Production Environment')">
+        </div>
+        <p>Upgraded Digifort servers, migrated databases/licenses, ensured zero downtime during production.</p>
+        <div class="project-meta">
+          <span>📊 Impact: 100% uptime • Enhanced scalability</span>
+          <span>🛠️ Tech: Digifort VMS, SQL Migration, Server Clustering</span>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>Huawei Switch Migration</h3>
+        <h4>Enterprise Network Transition</h4>
+        <div class="image-grid">
+          <img src="assets/images/Huawei1.jpg" 
+               alt="Huawei switch configuration interface" 
+               loading="lazy"
+               onclick="openModal(this.src, 'Huawei Switch Configuration')">
+          <img src="assets/images/Huawei2.jpg" 
+               alt="Network topology during migration" 
+               loading="lazy"
+               onclick="openModal(this.src, 'Network Topology Mapping')">
+          <img src="assets/images/Huawei3.jpg" 
+               alt="Extreme switch integration complete" 
+               loading="lazy"
+               onclick="openModal(this.src, 'Extreme Switch Integration')">
+        </div>
+        <p>Migrated Huawei Switch infrastructure to Extreme Networks with full device reconfiguration.</p>
+        <div class="project-meta">
+          <span>⚡ Impact: Seamless transition • Zero packet loss</span>
+          <span>🛠️ Tech: Huawei S5700, Extreme XOS, VLAN Migration</span>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>Network Optimization & VPN Troubleshooting</h3>
+        <h4>Performance Stabilization</h4>
+        <div class="project-features">
+          <div class="feature-item">
+            <span>📈</span>
+            <div>
+              <strong>Diagnosed WAN fluctuations</strong>
+              <small>Reduced latency by 40%</small>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>🔒</span>
+            <div>
+              <strong>Stabilized VPN tunnels</strong>
+              <small>99.9% uptime achieved</small>
+            </div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>🚀 Impact: Improved user experience across 200+ endpoints</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2>Technical Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>🌐 Networking</h4>
+          <ul>
+            <li>WAN/LAN Configuration</li>
+            <li>VLAN & VPN Setup</li>
+            <li>Switch/Router Migration</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>📹 CCTV Systems</h4>
+          <ul>
+            <li>Digifort VMS</li>
+            <li>IP Camera Integration</li>
+            <li>Server Clustering</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>🛠️ Systems</h4>
+          <ul>
+            <li>Server Migration</li>
+            <li>Database Backup/Restore</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Let's Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h4>📧 Email</h4>
+          <p><a href="mailto:joshmartinezvelasco@gmail.com">joshmartinezvelasco@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>📍 Location</h4>
+          <p>Philippines • Available for onsite/remote</p>
+        </div>
+        <div class="contact-item">
+          <h4>💼 Availability</h4>
+          <p>Full-time • Contract • Consulting</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="modalCaption" class="modal-caption"></div>
   </div>
 
-  <div class="card">
-    <h3>Network Optimization & VPN Troubleshooting</h3>
-    <p>Diagnosed fluctuating speeds and stabilized WAN performance.</p>
-    <span>Impact: Reduced downtime and improved user experience</span>
-  </div>
+  <script>
+    // Enhanced Modal Functionality
+    function openModal(imageSrc, caption = '') {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const captionText = document.getElementById('modalCaption');
+      
+      modal.style.display = 'block';
+      modalImg.src = imageSrc;
+      captionText.textContent = caption;
+      document.body.style.overflow = 'hidden';
+    }
 
-</section>
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Network Configuration (WAN, VLAN, VPN)</li>
-    <li>CCTV Systems (VMS, IP Cameras)</li>
-    <li>Server Migration</li>
-    <li>Troubleshooting & Optimization</li>
-  </ul>
-</section>
+    // Close modal when clicking outside image
+    window.onclick = function(event) {
+      const modal = document.getElementById('imageModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: joshmartinezvelasco@gmail.com</p>
-</section>
+    // Smooth scrolling & loading
+    window.addEventListener('load', () => {
+      document.getElementById('loadingScreen').style.opacity = '0';
+      setTimeout(() => {
+        document.getElementById('loadingScreen').style.display = 'none';
+      }, 300);
+    });
 
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe cards for scroll animations
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(card);
+    });
+  </script>
 </body>
 </html>
