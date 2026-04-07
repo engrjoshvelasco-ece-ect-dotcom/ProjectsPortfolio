@@ -459,30 +459,6 @@ main {
   color: white;
 }
 
-/* === HERO ONE-LINER PERFECT === */
-.hero-title {
-  font-size: clamp(2rem, 7vw, 3.5rem) !important;
-  margin: 0 0 var(--spacing-xs) 0 !important;
-  line-height: 1.1 !important;
-  font-weight: 700 !important;
-  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
-  display: block !important;
-  text-align: center !important;
-}
-
-.hero-subtitle {
-  font-size: clamp(1rem, 3vw, 1.25rem) !important;
-  margin: 0 !important;
-  opacity: 0.9;
-  font-weight: 400;
-  max-width: 600px;
-  margin-inline: auto;
-  line-height: 1.4;
-}
 
 /* === COPYRIGHT FOOTER === */
 .footer {
