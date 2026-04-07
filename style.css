@@ -32,8 +32,14 @@ body {
   font-size: 1rem;
   font-weight: 400;
   overflow-x: hidden;
+  
+  /* ✅ CENTERING SYSTEM */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center; /* Fallback centering */
 }
-
 h3 {
   margin: 0 0 var(--spacing-sm) 0;
   font-size: clamp(1.25rem, 4vw, 1.75rem);
