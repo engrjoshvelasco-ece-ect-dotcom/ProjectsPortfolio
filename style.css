@@ -458,3 +458,62 @@ main {
   font-weight: 600;
   color: white;
 }
+
+/* === HERO ONE-LINER PERFECT === */
+.hero-title {
+  font-size: clamp(2rem, 7vw, 3.5rem) !important;
+  margin: 0 0 var(--spacing-xs) 0 !important;
+  line-height: 1.1 !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  display: block !important;
+  text-align: center !important;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1.25rem) !important;
+  margin: 0 !important;
+  opacity: 0.9;
+  font-weight: 400;
+  max-width: 600px;
+  margin-inline: auto;
+  line-height: 1.4;
+}
+
+/* === COPYRIGHT FOOTER === */
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+}
+
+/* Mobile perfect spacing */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(1.75rem, 8vw, 2.75rem) !important;
+  }
+  
+  .footer {
+    padding: var(--spacing-md) var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+  }
+}
